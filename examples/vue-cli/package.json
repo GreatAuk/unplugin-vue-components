@@ -1,6 +1,5 @@
 {
   "name": "vue-cli",
-  "type": "module",
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
