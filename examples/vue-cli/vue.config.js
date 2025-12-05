@@ -1,12 +1,12 @@
-const IconsResolver = require('unplugin-icons/resolver').default
-const Icons = require('unplugin-icons/webpack').default
-const ScriptSetup = require('unplugin-vue2-script-setup/webpack').default
-const Components = require('unplugin-vue-components/webpack')
+import IconsResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/webpack'
+import ScriptSetup from 'unplugin-vue2-script-setup/webpack'
+import Components from 'unplugin-vue-components/webpack'
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
  */
-module.exports = {
+export default {
   configureWebpack: {
     plugins: [
       ScriptSetup({

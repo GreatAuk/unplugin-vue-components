@@ -86,10 +86,12 @@ export default {
 
 ```ts
 // webpack.config.js
-module.exports = {
+import Components from 'unplugin-vue-components/webpack'
+
+export default {
   /* ... */
   plugins: [
-    require('unplugin-vue-components/webpack')({ /* options */ }),
+    Components({ /* options */ }),
   ],
 }
 ```
@@ -101,10 +103,12 @@ module.exports = {
 
 ```ts
 // rspack.config.js
-module.exports = {
+import Components from 'unplugin-vue-components/rspack'
+
+export default {
   /* ... */
   plugins: [
-    require('unplugin-vue-components/rspack')({ /* options */ }),
+    Components({ /* options */ }),
   ],
 }
 ```
@@ -123,10 +127,12 @@ You might not need this plugin for Nuxt. Use [`@nuxt/components`](https://github
 
 ```ts
 // vue.config.js
-module.exports = {
+import Components from 'unplugin-vue-components/webpack'
+
+export default {
   /* ... */
   plugins: [
-    require('unplugin-vue-components/webpack')({ /* options */ }),
+    Components({ /* options */ }),
   ],
 }
 ```

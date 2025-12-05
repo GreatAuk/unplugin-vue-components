@@ -1,7 +1,7 @@
-const { defineConfig } = require('@vue/cli-service')
-const Components = require('unplugin-vue-components/webpack')
+import { defineConfig } from '@vue/cli-service'
+import Components from 'unplugin-vue-components/webpack'
 
-module.exports = defineConfig({
+export default defineConfig({
   transpileDependencies: true,
   configureWebpack: {
     plugins: [
